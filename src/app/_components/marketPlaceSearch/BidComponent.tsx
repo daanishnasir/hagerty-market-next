@@ -20,7 +20,7 @@ const BidComponent = ({
   useEffect(() => {
     if (!isAuction) {
       //NOTE: For non-auction items, show "1 day" or "2 days"
-      const daysLeft = Math.ceil(Math.random() * 2); // Randomly show either 1 or 2
+      const daysLeft = Math.ceil(Math.random() * 2); // NOTE: Randomly show either 1 or 2 bid days left,
       setTimeLeft(`${daysLeft} day${daysLeft > 1 ? "s" : ""}`);
       return;
     }

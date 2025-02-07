@@ -12,4 +12,6 @@
 - [x] Add dark mode toggle
 - [x] Implement sorting
 - [x] Add vehicle detail pages
+- [x] Add Bid All button with Chakra-UI Dialog component
+- [ ] Add a postgres backend with prisma
 - [x] Deploy to vercel

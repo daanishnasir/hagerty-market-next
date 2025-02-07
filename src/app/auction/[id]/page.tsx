@@ -28,7 +28,7 @@ export default function VehicleDetailsPage() {
         const data = await response.json();
         setVehicle({
           ...data,
-          price: SAMPLE_PRICES[0], // You might want to store/retrieve the actual price
+          price: SAMPLE_PRICES[0],
         });
       } catch (error) {
         console.error("Error fetching vehicle:", error);
@@ -53,8 +53,8 @@ export default function VehicleDetailsPage() {
   return (
     <Box maxW="container.xl" mx="auto" p={8}>
       <Box display="flex" gap={8} flexDirection={{ base: "column", md: "row" }}>
-        {/* Left column - Images */}
         <Box flex="1">
+          {/* // TODO: next/img  */}
           <img
             src={vehicle.urls.regular}
             alt={vehicle.description}
@@ -67,7 +67,6 @@ export default function VehicleDetailsPage() {
           />
         </Box>
 
-        {/* Right column - Details */}
         <Box flex="1">
           <Box
             display="flex"
